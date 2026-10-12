@@ -1,0 +1,11 @@
+*.jar
+*.class
+*.log
+.gradle/
+build/
+run/
+logs/
+crash-reports/
+.minecraft/
+.DS_Store
+Thumbs.db
