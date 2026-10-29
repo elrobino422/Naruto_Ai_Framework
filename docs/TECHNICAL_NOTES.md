@@ -41,3 +41,6 @@ V13 user confirmed facing and Fireball/Rasenshuriken firing, but exact range fil
 Common natural NPCs: village civilians, Genin, Chunin, Jonin.
 Rare natural: Gaara, Killer Bee, Nagato/Pain, Minato, first three Hokage.
 Summonable CustomNPC bosses: Kaguya, Momoshiki, other Otsutsuki, Ten-Tails Madara and Ten-Tails Obito.
+
+## V14 stabilization candidate (2026-10-29)
+The original user-uploaded V13 is archived unchanged. V14 active and snapshot scripts now use game-tick cooldown timers with approximate V13 pacing (200 / 350 / 125 ticks), 50-tick global lock, optional throttled debug, navigation request throttling, and cached successful NarutoMod jutsu lookups. Passed JavaScript syntax and mocked event-loop tests only. **Not verified in Minecraft yet.** See `versions/V14/NOTES.md` and `tests/V14_TEST_PLAN.md`.
