@@ -21,8 +21,9 @@ Target: Minecraft 1.12.2. Legend: [x] done, [ ] planned, [?] validation pending.
 - [x] Ability ranges, weights, cooldown counters
 - [x] V13 facing and casting tested in game
 - [?] Controlled range checks at 2, 8, 18, 25 blocks
-- [?] Navigation, distance, cooldown timing
-- [ ] Remove temporary debug and stabilize V14
+- [?] Verify V14 navigation, distance and cooldown timing in Minecraft
+- [x] Prepare V14 candidate with optional, throttled debug and real-tick timing (automated check only)
+- [?] Verify V14 in Minecraft and mark stable
 - [ ] Separate common engine from NPC configuration
 
 ## 3. Ability database
@@ -53,4 +54,6 @@ Target: Minecraft 1.12.2. Legend: [x] done, [ ] planned, [?] validation pending.
 - [ ] Performance, multiplayer, persistence and spawn tests
 - [ ] Documentation and release packaging
 
-**Immediate next step:** Commit the exact working V13 source, validate distance and ability eligibility, then stabilize V14.
+**Current status (2026-10-29):** The exact user-supplied V13 script is archived unchanged. A V14 candidate has been committed to the active script and version archive, with optional throttled debug, real-tick timers and navigation throttling. It passed JavaScript syntax and mocked combat-loop tests, **not** an in-game Minecraft test.
+
+**Next step:** Test V14 in Minecraft using `tests/V14_TEST_PLAN.md`. Only then mark V14 stable. Roll back to `versions/V13/` if needed.
